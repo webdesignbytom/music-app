@@ -17,7 +17,7 @@ function ContactPage() {
         <section className='grid h-min items-center lg:my-auto'>
           <article className='bg-slate-200 h-min rounded py-8 my-8'>
             <div className='text-center mt-4'>
-              <h1 className='text-2xl font-bold'>Contact Me!</h1>
+              <h1 className='text-2xl font-bold'>Contact Stuart</h1>
             </div>
             <div className='sm:px-6'>
               <p className='px-2 pt-2 pb-6 md:mx-6 lg:mx-4'>

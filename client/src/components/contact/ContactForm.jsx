@@ -123,7 +123,7 @@ function ContactForm() {
           <textarea
             name='message'
             id='message'
-            className='overflow-y-scroll resize-none scroll-smooth'
+            className='overflow-y-scroll resize-none scroll-smooth border border-solid border-gray-300 rounded p-1'
             rows='4'
             onChange={handleChange}
           ></textarea>
