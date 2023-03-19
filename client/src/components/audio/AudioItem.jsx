@@ -16,12 +16,11 @@ function AudioItem({ dataItem }) {
           </button>
         </div>
 
-        <section className='flex'>
+        <section className='flex justify-between md:w-full'>
           <h4 className=''>{title}</h4>
-          <h5>
-            {pageNum}{' '}
-            <span className='text-blue-500 cursor-pointer pl-5'>View Notation</span>
+          <h5>{pageNum}
           </h5>
+            <a href='/' className='text-blue-500 cursor-pointer'>View Notation</a>
         </section>
       </section>
     </li>

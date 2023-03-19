@@ -15,7 +15,7 @@ function AudioContainer() {
           Alt+Shift For Orchestra
         </h3>
         <section className='w-full'>
-          <ul className='grid gap-[1px] w-full'>
+          <ul className='grid gap-2 md:gap-[1px] w-full'>
             {altShiftData.map((dataItem, index) => {
               return <AudioItem key={index} dataItem={dataItem} />;
             })}
