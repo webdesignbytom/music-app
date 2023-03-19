@@ -19,41 +19,84 @@ export const statusResults = {
 
 export const altShiftData = [
   {
-    buttonText: `Button`,
+    buttonText: `Play`,
     pageNum: '1 - 7',
     title: `Excerpt One`,
     link: `https://github.com/`,
   },
   {
-    buttonText: `Button`,
+    buttonText: `Play`,
     pageNum: '21 - 29',
     title: `Excerpt Two`,
     link: `https://github.com/`,
   },
   {
-    buttonText: `Button`,
+    buttonText: `Play`,
     pageNum: '32 - 40',
     title: `Excerpt Three`,
     link: `https://github.com/`,
   },
   {
-    buttonText: `Button`,
+    buttonText: `Play`,
     pageNum: '24 - 46',
     title: `Excerpt Four`,
     link: `https://github.com/`,
   },
   {
-    buttonText: `Button`,
+    buttonText: `Play`,
     pageNum: '65 - 72',
     title: `Excerpt Five`,
     link: `https://github.com/`,
   },
   {
-    buttonText: `Button`,
+    buttonText: `Play`,
     pageNum: '77 - 79',
     title: `Excerpt Six`,
     link: `https://github.com/`,
   },
+];
+
+export const gedData = [
+  {
+    buttonText: `Play`,
+    pageNum: '2 - 8',
+    title: `Excerpt One`,
+    link: `https://github.com/`,
+  },
+  {
+    buttonText: `Play`,
+    pageNum: '13 - 18',
+    title: `Excerpt Two`,
+    link: `https://github.com/`,
+  },
+  {
+    buttonText: `Play`,
+    pageNum: '21 - 31',
+    title: `Excerpt Three`,
+    link: `https://github.com/`,
+  },
+  {
+    buttonText: `Play`,
+    pageNum: '33 - 39',
+    title: `Excerpt Four`,
+    link: `https://github.com/`,
+  },
+  {
+    buttonText: `Play`,
+    pageNum: '45 - 50',
+    title: `Excerpt Five`,
+    link: `https://github.com/`,
+  },
+];
+
+export const distanceData = [
+  {
+    buttonText: `Play`,
+    pageNum: '1',
+    title: `First Movement`,
+    link: `https://github.com/`,
+  },
+
 ];
 
 export const videoData = [
