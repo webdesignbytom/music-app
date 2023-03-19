@@ -17,6 +17,45 @@ export const statusResults = {
   message: '',
 };
 
+export const altShiftData = [
+  {
+    buttonText: `Button`,
+    pageNum: '1 - 7',
+    title: `Excerpt One`,
+    link: `https://github.com/`,
+  },
+  {
+    buttonText: `Button`,
+    pageNum: '21 - 29',
+    title: `Excerpt Two`,
+    link: `https://github.com/`,
+  },
+  {
+    buttonText: `Button`,
+    pageNum: '32 - 40',
+    title: `Excerpt Three`,
+    link: `https://github.com/`,
+  },
+  {
+    buttonText: `Button`,
+    pageNum: '24 - 46',
+    title: `Excerpt Four`,
+    link: `https://github.com/`,
+  },
+  {
+    buttonText: `Button`,
+    pageNum: '65 - 72',
+    title: `Excerpt Five`,
+    link: `https://github.com/`,
+  },
+  {
+    buttonText: `Button`,
+    pageNum: '77 - 79',
+    title: `Excerpt Six`,
+    link: `https://github.com/`,
+  },
+];
+
 export const videoData = [
   {
     title: `‘Distance’ (piano concerto) London Philharmonic Orchestra - Turnbull`,
@@ -49,7 +88,7 @@ export const videoData = [
     data: ``,
     location: ``,
   },
-]
+];
 
 export const reviewData = [
   {
@@ -110,6 +149,26 @@ export const reviewData = [
     content: `“Very beautiful music”`,
     name: `Farkhad Khudyev`,
     position: `Conductor`,
+  },
+  {
+    content: `“Very beautiful and creative music..”`,
+    name: `Luka Faulisi`,
+    position: `Violinist`,
+  },
+  {
+    content: `“Fierce music”`,
+    name: `Mie Yi Foo`,
+    position: `Pianist`,
+  },
+  {
+    content: `“Music that's visceral, a slap in the face..”`,
+    name: `Bruno Bower`,
+    position: `Educator and Critic`,
+  },
+  {
+    content: `“Music that is tender, dark and bristling, a slap in the face..”`,
+    name: `Rolf Hind`,
+    position: `Pianist`,
   },
 ];
 
