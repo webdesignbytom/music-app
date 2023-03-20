@@ -22,8 +22,8 @@ function GallerySet({
   };
 
   return (
-    <section className='grid h-screen grid-rows-rev overflow-hidden relative pb-2 bg-black dark:bg-white'>
-      <div className='hidden md:block absolute top-2 right-2 z-20'>
+    <section className='grid max-h-screen grid-rows-rev overflow-hidden relative pb-2 bg-black dark:bg-white'>
+      <div className='hidden md:grid absolute top-4 right-4 z-20'>
         <AiOutlineCloseCircle
           size={30}
           className='cursor-pointer text-white '
@@ -36,9 +36,9 @@ function GallerySet({
 
       {/* Main image */}
       <section className='grid h-full items-center bg-black dark:bg-white'>
-        <article className='py-16 md:px-16 '>
+        <article className='grid py-16 md:px-24'>
           <img
-            className='w-full max-h-[70vh] object-cover'
+            className='w-full max-h-[70vh] object-fill'
             src={selectedImage.image}
             alt={selectedImage.alt}
           />
@@ -49,23 +49,25 @@ function GallerySet({
         </h2>
       </section>
       {/* Gallery */}
-      <section className='grid grid-flow-col bg-black'>
+      <section className='bg-black w-full flex justify-center'>
+        <div className='grid grid-flow-col w-fit'>
         {selectedGallery.map((image, index) => {
           return (
             <article
               onClick={() => changeImage(image)}
               key={index}
-              className='my-4'
+              className='my-4 flex justify-center'
             >
               <img
                 src={image.image}
                 alt={image.alt}
                 name='cadogan'
-                className='duration-300 ease-in-out hover:scale-110 cursor-pointer'
+                className='duration-300 object-cover ease-in-out hover:scale-110 cursor-pointer w-[120px]'
               />
             </article>
           );
         })}
+        </div>
       </section>
       <div className='md:hidden pb-32 z-20 text-center mx-6'>
         <button

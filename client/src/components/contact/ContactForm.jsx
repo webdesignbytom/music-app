@@ -133,7 +133,7 @@ function ContactForm() {
         <div className='my-2'>
           <button
             type='submit'
-            className='bg-slate-200 grid justify-center py-2 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-slate-300 hover:shadow-lg focus:bg-slate-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-slate-500 active:shadow-lg transition duration-150 ease-in-out w-full'
+            className='bg-black dark:bg-white dark:text-black grid justify-center py-2 text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-white dark:hover:bg-black hover:text-black dark:hover:text-white hover:shadow-lg focus:bg-slate-500 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-slate-500 active:shadow-lg transition duration-150 ease-in-out w-full'
             data-mdb-ripple='true'
             data-mdb-ripple-color='light'
           >
