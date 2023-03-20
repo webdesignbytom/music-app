@@ -7,12 +7,14 @@ import GalleryPage from './pages/GalleryPage';
 import EventsPage from './pages/EventsPage';
 import ReviewsPage from './pages/ReviewsPage';
 import ContactPage from './pages/ContactPage';
+import NewHome from './pages/NewHome';
 
 function App() {
   return (
     <>
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='/newhome' element={<NewHome />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/media' element={<MediaPage />} />
         <Route path='/gallery' element={<GalleryPage />} />

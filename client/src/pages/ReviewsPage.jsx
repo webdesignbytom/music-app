@@ -2,8 +2,8 @@ import React from 'react';
 import Navbar from '../components/nav/Navbar';
 import ReviewItem from '../components/reviews/ReviewItem';
 // Images
-import ReviewImage from '../img/reviews.jpg';
-import StarsImage from '../img/stars.png';
+import ReviewImage from '../assets/img/reviews.jpg';
+import StarsImage from '../assets/img/stars.png';
 // Data
 import { reviewData } from '../utils/Data';
 

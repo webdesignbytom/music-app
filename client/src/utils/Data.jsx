@@ -1,6 +1,18 @@
 import { BsMusicNote } from 'react-icons/bs';
 import { BsMusicNoteBeamed } from 'react-icons/bs';
 import { HiOutlineMusicNote } from 'react-icons/hi';
+// Audio
+import Alt1 from '../assets/Audio/Alt1.mp3';
+import Alt2 from '../assets/Audio/Alt2.mp3';
+import Alt3 from '../assets/Audio/Alt3.mp3';
+import Alt4 from '../assets/Audio/Alt4.mp3';
+import Alt5 from '../assets/Audio/Alt5.mp3';
+import Alt6 from '../assets/Audio/Alt6.mp3';
+import GED1 from '../assets/Audio/GED1.mp3';
+import GED2 from '../assets/Audio/GED2.mp3';
+import GED3 from '../assets/Audio/GED3.mp3';
+import GED4 from '../assets/Audio/GED4.mp3';
+import GED5 from '../assets/Audio/GED5.mp3';
 
 export const contactFormTemplate = {
   email: '',
@@ -23,36 +35,42 @@ export const altShiftData = [
     pageNum: '1 - 7',
     title: `Excerpt One`,
     link: `https://github.com/`,
+    audio: Alt1,
   },
   {
     buttonText: `Play`,
     pageNum: '21 - 29',
     title: `Excerpt Two`,
     link: `https://github.com/`,
+    audio: Alt2,
   },
   {
     buttonText: `Play`,
     pageNum: '32 - 40',
     title: `Excerpt Three`,
     link: `https://github.com/`,
+    audio: Alt3,
   },
   {
     buttonText: `Play`,
     pageNum: '24 - 46',
     title: `Excerpt Four`,
     link: `https://github.com/`,
+    audio: Alt4,
   },
   {
     buttonText: `Play`,
     pageNum: '65 - 72',
     title: `Excerpt Five`,
     link: `https://github.com/`,
+    audio: Alt5,
   },
   {
     buttonText: `Play`,
     pageNum: '77 - 79',
     title: `Excerpt Six`,
     link: `https://github.com/`,
+    audio: Alt6,
   },
 ];
 
@@ -62,30 +80,35 @@ export const gedData = [
     pageNum: '2 - 8',
     title: `Excerpt One`,
     link: `https://github.com/`,
+    audio: GED1,
   },
   {
     buttonText: `Play`,
     pageNum: '13 - 18',
     title: `Excerpt Two`,
     link: `https://github.com/`,
+    audio: GED2,
   },
   {
     buttonText: `Play`,
     pageNum: '21 - 31',
     title: `Excerpt Three`,
     link: `https://github.com/`,
+    audio: GED3,
   },
   {
     buttonText: `Play`,
     pageNum: '33 - 39',
     title: `Excerpt Four`,
     link: `https://github.com/`,
+    audio: GED4,
   },
   {
     buttonText: `Play`,
     pageNum: '45 - 50',
     title: `Excerpt Five`,
     link: `https://github.com/`,
+    audio: GED5,
   },
 ];
 
@@ -96,7 +119,6 @@ export const distanceData = [
     title: `First Movement`,
     link: `https://github.com/`,
   },
-
 ];
 
 export const videoData = [

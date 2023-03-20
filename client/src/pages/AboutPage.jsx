@@ -1,11 +1,11 @@
 import React from 'react';
 // Components
 import Navbar from '../components/nav/Navbar';
+import Footer from '../components/footer/Footer';
 // Data
 import { aboutPageContent } from '../utils/Data';
 // Images
-import AboutImage from '../img/aboutpage.jpg';
-import Footer from '../components/footer/Footer';
+import AboutImage from '../assets/img/aboutpage.jpg';
 
 function AboutPage() {
   return (

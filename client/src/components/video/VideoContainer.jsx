@@ -40,8 +40,8 @@ function VideoContainer() {
       </div>
 
       <section className='hidden lg:grid text-xl text-center'>
-        Currently Selected Video
-        <span className='italic text-sm'>{currentlyPlaying}</span>
+        <h5 className='text-xl font-semibold mb-2'>Currently Selected Video</h5>
+        <span className='italic text-sm font-semibold'>{currentlyPlaying}</span>
       </section>
     </section>
   );
