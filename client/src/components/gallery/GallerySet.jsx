@@ -22,7 +22,7 @@ function GallerySet({
   };
 
   return (
-    <section className='grid h-screen grid-rows-rev overflow-hidden bg-red-400 relative pb-2'>
+    <section className='grid h-screen grid-rows-rev overflow-hidden relative pb-2 bg-black dark:bg-white'>
       <div className='absolute top-2 right-2 z-20'>
         <AiOutlineCloseCircle
           size={30}
@@ -30,11 +30,11 @@ function GallerySet({
           onClick={closeGallery}
         />
       </div>
-      <h2 className='absolute text-center text-white text-xl font-semibold w-full z-0'>{selectedImage.alt}</h2>
+      <h2 className='absolute text-center text-white dark:text-black text-xl font-semibold w-full z-0'>{selectedImage.alt}</h2>
 
       {/* Main image */}
-      <section className='grid h-full bg-black'>
-        <article className='py-8 px-16 '>
+      <section className='grid h-full items-center bg-black dark:bg-white'>
+        <article className='py-8 md:px-16 '>
           <img
             className='w-full max-h-[70vh] object-cover'
             src={selectedImage.image}

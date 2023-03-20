@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
 // Pages
-import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import MediaPage from './pages/MediaPage';
 import GalleryPage from './pages/GalleryPage';
@@ -13,8 +12,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/newhome' element={<NewHome />} />
+        <Route path='/' element={<NewHome />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/media' element={<MediaPage />} />
         <Route path='/gallery' element={<GalleryPage />} />

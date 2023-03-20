@@ -13,7 +13,7 @@ function NewHome() {
         <section
           className={`bg-[url('../assets/img/homepage.jpeg')] bg-no-repeat bg-cover bg-center grid justify-center items-center`}
         >
-          <section className='grid gap-2 bg-[#00000085] p-4 h-fit md:hidden justify-center items-center text-center'>
+          <section className='grid gap-2 bg-[#00000085] mt-16 p-4 h-fit md:hidden justify-center items-center text-center'>
             <article className='bg-white dark:bg-black text-black dark:text-white py-6 px-4'>
               <h1 className='text-4xl my-2 font-bold'>Stuart Turnbull</h1>
               <h2 className='text-sm font-semibold'>

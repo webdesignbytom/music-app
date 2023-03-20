@@ -231,7 +231,7 @@ export const reviewData = [
     position: `Educator and Critic`,
   },
   {
-    content: `“Music that is tender, dark and bristling, a slap in the face..”`,
+    content: `“Music that is tender, dark and bristling..”`,
     name: `Rolf Hind`,
     position: `Pianist`,
   },

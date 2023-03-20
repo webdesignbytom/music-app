@@ -13,11 +13,11 @@ function Navbar() {
 
   return (
     <>
-      <div className='h-16 mx-auto w-full px-6 lg:px-4 grid grid-flow-col justify-between items-center bg-white dark:bg-black text-black dark:text-white max-w-full overflow-x-hidden border-b-2 border-black border-solid'>
+      <div className='h-16 mx-auto w-full px-6 lg:px-4 grid grid-flow-col justify-between items-center bg-white dark:bg-black text-black dark:text-white max-w-full overflow-x-hidden border-b-2 border-black dark:border-white border-solid'>
         {/* Logo */}
         <section>
           <div className='cursor-pointer transition ease-in-out duration-200 text-colour-med hover:text-slate-500 active:text-slate-500 focus:text-slate-500'>
-            <Link to='/' className='font-semibold text-xl'>
+            <Link to='/' className='font-semibold text-2xl'>
               Stuart Turnbull
             </Link>
           </div>
@@ -43,9 +43,6 @@ function Navbar() {
             <li className='cursor-pointer transition ease-in-out duration-200 text-colour-med hover:text-slate-500 active:text-slate-500 focus:text-slate-500'>
               <Link to='/'>Home</Link>
             </li>
-            <li className='cursor-pointer transition ease-in-out duration-200 text-colour-med hover:text-slate-500 active:text-slate-500 focus:text-slate-500'>
-              <Link to='/newhome'>Home2</Link>
-            </li>
             <li className='cursor-pointer transition ease-in-out duration-200 text-colour-med hover:text-slate-500 active:text-slate-500'>
               <Link to='/about'>About</Link>
             </li>
@@ -55,9 +52,9 @@ function Navbar() {
             <li className='cursor-pointer transition ease-in-out duration-200 text-colour-med hover:text-slate-500 active:text-slate-500'>
               <Link to='/gallery'>Gallery</Link>
             </li>
-            <li className='cursor-pointer transition ease-in-out duration-200 text-colour-med hover:text-slate-500 active:text-slate-500'>
+            {/* <li className='cursor-pointer transition ease-in-out duration-200 text-colour-med hover:text-slate-500 active:text-slate-500'>
               <Link to='/events'>Events</Link>
-            </li>
+            </li> */}
             <li className='cursor-pointer transition ease-in-out duration-200 text-colour-med hover:text-slate-500 active:text-slate-500'>
               <Link to='/reviews'>Reviews</Link>
             </li>
@@ -69,30 +66,27 @@ function Navbar() {
       </div>
 
       {openNav && (
-        <section className='lg:hidden absolute z-10 bg-white dark:bg-black w-full overflow-hidden border-2 border-black border-solid'>
+        <section className='lg:hidden absolute z-10 bg-white dark:bg-black w-full overflow-hidden border-l-2 border-b-2 border-r-2 dark:border-white border-black border-solid'>
           <ul className='p-2 grid text-gray-700 text-xl text-center py-8 gap-4'>
-            <li className='cursor-pointer hover:text-black dark:hover:text-white transition duration-200 ease-in-out select-none focus:scale-125 active:scale-125'>
-              <Link to='/'>Home</Link>
-            </li>
             <li className='cursor-pointer transition ease-in-out duration-200 text-colour-med hover:text-slate-500 active:text-slate-500 focus:text-slate-500'>
-              <Link to='/newhome'>Home2</Link>
+              <Link to='/'>Home</Link>
             </li>
             <li className='cursor-pointer hover:text-black dark:hover:text-white transition duration-200 ease-in-out select-none focus:scale-125 active:scale-125'>
               <Link to='/about'>About</Link>
             </li>
-            <li className='cursor-pointer hover:text-black dark:hover:text-white'>
+            <li className='cursor-pointer hover:text-black dark:hover:text-white transition duration-200 ease-in-out select-none focus:scale-125 active:scale-125'>
               <Link to='/media'>Media</Link>
             </li>
-            <li className='cursor-pointer hover:text-black dark:hover:text-white'>
+            <li className='cursor-pointer hover:text-black dark:hover:text-white transition duration-200 ease-in-out select-none focus:scale-125 active:scale-125'>
               <Link to='/gallery'>Gallery</Link>
             </li>
-            <li className='cursor-pointer hover:text-black dark:hover:text-white'>
+            {/* <li className='cursor-pointer hover:text-black dark:hover:text-white'>
               <Link to='/events'>Events</Link>
-            </li>
-            <li className='cursor-pointer hover:text-black dark:hover:text-white'>
+            </li> */}
+            <li className='cursor-pointer hover:text-black dark:hover:text-white transition duration-200 ease-in-out select-none focus:scale-125 active:scale-125'>
               <Link to='/reviews'>Reviews</Link>
             </li>
-            <li className='cursor-pointer hover:text-black dark:hover:text-white'>
+            <li className='cursor-pointer hover:text-black dark:hover:text-white transition duration-200 ease-in-out select-none focus:scale-125 active:scale-125'>
               <Link to='/contact'>Contact</Link>
             </li>
           </ul>

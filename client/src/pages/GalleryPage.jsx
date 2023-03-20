@@ -18,18 +18,47 @@ function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState({});
 
   const openGallery = (image) => {
-    console.log('image', image);
-    setSelectedImage(image)
-    setToggleGallery(true)
+    console.log('image', image.alt);
+    setSelectedImage(image);
+    setToggleGallery(true);
 
-    if (image.alt === 'Cadogan Hall') {
-      setSelectedGallery(cadoganData)
+    if (image.alt === "Cadogan Hall") {
+      console.log('cad');
+      setSelectedGallery(cadoganData);
     }
+
+    if (image.alt === 'Kansas City Symphony') {
+      console.log('cnsas');
+      setSelectedGallery(kansasData)
+    }
+
+    if (image.alt === 'BBC singers concert') {
+      console.log('hull');
+      setSelectedGallery(hullData)
+    }
+
+    if (image.alt === 'The London Philharmonic Orchestra') {
+      console.log('lon');
+      setSelectedGallery(londonData)
+    }
+
+    if (image.alt === 'BBC Scottish Symphony Orchestra') {
+      console.log('scot');
+      setSelectedGallery(scotlandData)
+    }
+
   };
 
   return (
     <>
-      {toggleGallery && <GallerySet selectedGallery={selectedGallery} selectedImage={selectedImage} setSelectedImage={setSelectedImage} setSelectedGallery={setSelectedGallery} />}
+      {toggleGallery && (
+        <GallerySet
+          selectedGallery={selectedGallery}
+          selectedImage={selectedImage}
+          setSelectedImage={setSelectedImage}
+          setSelectedGallery={setSelectedGallery}
+        />
+      )}
       {!toggleGallery && (
         <div className='bg-white dark:bg-black dark:text-white'>
           <Navbar />
@@ -79,13 +108,18 @@ function GalleryPage() {
                   <h4 className='text-xl font-semibold'>2022</h4>
                 </article>
                 <section className='lg:max-w-full'>
-                  <div className='grid grid-cols-2 lg:grid-cols-6'>
+                  <div className='grid grid-cols-2 lg:grid-cols-4'>
                     {kansasData.map((image, index) => {
                       return (
-                        <article key={index} className='my-4'>
+                        <article
+                          onClick={() => openGallery(image)}
+                          key={index}
+                          className='my-4'
+                        >
                           <img
                             src={image.image}
                             alt={image.alt}
+                            name='kansas'
                             className='duration-300 ease-in-out hover:scale-110 cursor-pointer object-contain'
                           />
                         </article>
@@ -107,10 +141,15 @@ function GalleryPage() {
                   <div className='grid grid-cols-2 md:grid-cols-4 grid-flow-row-dense gap-2 my-4'>
                     {londonData.map((image, index) => {
                       return (
-                        <article key={index} className='grid gap-2'>
+                        <article
+                          onClick={() => openGallery(image)}
+                          key={index}
+                          className='my-4'
+                        >
                           <img
                             src={image.image}
                             alt={image.alt}
+                            name='london'
                             className='duration-300 ease-in-out hover:scale-110 cursor-pointer object-contain'
                           />
                         </article>
@@ -136,6 +175,7 @@ function GalleryPage() {
                           <img
                             src={image.image}
                             alt={image.alt}
+                            name='hull'
                             className='md:w-[200px] duration-300 ease-in-out hover:scale-110 cursor-pointer'
                           />
                         </article>
