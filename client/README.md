@@ -1,6 +1,6 @@
 # StuartMurrayApp
 
-This app is deployed at [https://cute-pudding-2b5aa1.netlify.app/](https://cute-pudding-2b5aa1.netlify.app/)
+This app is deployed at [https://teal-croquembouche-5572d8.netlify.app/](https://teal-croquembouche-5572d8.netlify.app/)
 
 Website and portal for Stuart Murray and his music.
 
