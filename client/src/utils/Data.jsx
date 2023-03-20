@@ -112,43 +112,43 @@ export const gedData = [
   },
 ];
 
-export const distanceData = [
-  {
-    buttonText: `Play`,
-    pageNum: '1',
-    title: `First Movement`,
-    link: `https://github.com/`,
-  },
-];
-
 export const videoData = [
   {
-    title: `‘Distance’ (piano concerto) London Philharmonic Orchestra - Turnbull`,
+    name: `Distance (piano concerto)`,
+    title:  `London Philharmonic Orchestra`,
+    artist: `Turnbull`,
     videoData: ``,
     data: ``,
     location: ``,
   },
   {
-    title: `Mozart - Figaro Overture - London Philharmonic Orchestra`,
+    name: `Figaro Overture`,
+    title: `London Philharmonic Orchestra`,
+    artist: `Mozart`,
     videoData: ``,
     data: ``,
     location: ``,
   },
   {
-    title: `Debussy - Prélude à l'après midi d'un faune - London Philharmonic Orchestra
-    ‘Distance’ (piano concerto) English Chamber Orchestra - Turnbull`,
+    name: `Prélude à l'après midi d'un faune`,
+    title: `London Philharmonic Orchestra Distance (piano concerto) `,
+    artist: `Debussy`,
     videoData: ``,
     data: ``,
     location: ``,
   },
   {
-    title: `‘Cutting Ties’ (piano concerto) English Chamber Orchestra - Turnbull`,
+    name: `Distance`,
+    title: `Piano Concerto `,
+    artist: `English Chamber Orchestra - Turnbull`,
     videoData: ``,
     data: ``,
     location: ``,
   },
   {
-    title: ``,
+    name: `Cutting Ties`,
+    title: `Piano Concerto`,
+    artist: `English Chamber Orchestra - Turnbull`,
     videoData: ``,
     data: ``,
     location: ``,

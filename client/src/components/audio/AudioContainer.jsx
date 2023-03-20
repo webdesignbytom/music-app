@@ -49,11 +49,7 @@ function AudioContainer() {
           Distance, Piano Concerto - First Movement
         </h3>
         <section>
-          <ul className='grid gap-[1px]'>
-            {distanceData.map((dataItem, index) => {
-              return <AudioItem key={index} dataItem={dataItem} />;
-            })}
-          </ul>
+          
           <section className='h-[150px] border-2 border-black border-solid rounded mt-4'>
             PDF CONTAINER TO ADD HERE
           </section>

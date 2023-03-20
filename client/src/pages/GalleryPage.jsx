@@ -138,7 +138,7 @@ function GalleryPage() {
                   <h4 className='text-xl font-semibold'>2022</h4>
                 </article>
                 <section className='max-w-full'>
-                  <div className='grid grid-cols-2 md:grid-cols-4 grid-flow-row-dense gap-2 my-4'>
+                  <div className='grid grid-cols-2 md:grid-cols-4 grid-flow-row-dense gap-2'>
                     {londonData.map((image, index) => {
                       return (
                         <article
@@ -168,7 +168,7 @@ function GalleryPage() {
                   </h4>
                 </article>
                 <section className='max-w-full'>
-                  <div className='flex sm:grid sm:grid-cols-2 md:grid-cols-3 w-fit'>
+                  <div className='flex sm:grid sm:grid-cols-2 md:grid-cols-3 w-fit gap-2'>
                     {hullData.map((image, index) => {
                       return (
                         <article key={index} className='my-4'>
