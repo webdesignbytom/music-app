@@ -17,7 +17,7 @@ function Navbar() {
         {/* Logo */}
         <section>
           <div className='cursor-pointer transition ease-in-out duration-200 text-colour-med hover:text-slate-500 active:text-slate-500 focus:text-slate-500'>
-            <Link to='/' className='font-semibold'>
+            <Link to='/' className='font-semibold text-xl'>
               Stuart Turnbull
             </Link>
           </div>

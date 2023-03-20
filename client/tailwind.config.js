@@ -6,6 +6,9 @@ module.exports = {
       gridTemplateRows: {
         reg: 'auto 1fr',
       },
+      gridTemplateColumns: {
+        'reg': 'auto 1fr',
+      }
     },
   },
   plugins: [],

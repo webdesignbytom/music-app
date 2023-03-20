@@ -11,7 +11,7 @@ function AudioContainer() {
       <h2 className='text-xl font-bold'>Scores</h2>
       {/* 1 */}
       <article className='grid w-full'>
-        <h3 className='text-xl my-2 font-semibold italic'>
+        <h3 className='text-xl my-4 font-semibold italic '>
           Alt+Shift For Orchestra
         </h3>
         <section className='w-full'>
@@ -20,12 +20,15 @@ function AudioContainer() {
               return <AudioItem key={index} dataItem={dataItem} />;
             })}
           </ul>
+          <section className='h-[150px] border-2 border-black border-solid rounded mt-4'>
+            PDF CONTAINER TO ADD HERE
+          </section>
         </section>
       </article>
 
       {/* 2 */}
       <article className='grid'>
-        <h3 className='text-xl my-2 font-semibold italic'>
+        <h3 className='text-xl my-4 font-semibold italic'>
           The Garden of Earthly Delights for Large Orchestra
         </h3>
         <section>
@@ -34,12 +37,15 @@ function AudioContainer() {
               return <AudioItem key={index} dataItem={dataItem} />;
             })}
           </ul>
+          <section className='h-[150px] border-2 border-black border-solid rounded mt-4'>
+            PDF CONTAINER TO ADD HERE
+          </section>
         </section>
       </article>
 
       {/* 3 */}
       <article className='grid'>
-        <h3 className='text-xl my-2 font-semibold italic'>
+        <h3 className='text-xl my-4 font-semibold italic'>
           Distance, Piano Concerto - First Movement
         </h3>
         <section>
@@ -48,6 +54,9 @@ function AudioContainer() {
               return <AudioItem key={index} dataItem={dataItem} />;
             })}
           </ul>
+          <section className='h-[150px] border-2 border-black border-solid rounded mt-4'>
+            PDF CONTAINER TO ADD HERE
+          </section>
         </section>
       </article>
     </section>

@@ -11,9 +11,11 @@ function MediaPage() {
       <main className='mx-10 my-4'>
         <div className='my-8 text-center lg:text-left'>
           <h1 className='mb-1 text-2xl font-semibold'>Media</h1>
-          <h2>Video and Audio</h2>
         </div>
 
+        <section className='my-2 text-xl font-semibold'>
+          <h2>Concert Recordings</h2>
+        </section>
         <VideoContainer />
 
         <AudioContainer />
