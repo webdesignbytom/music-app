@@ -18,22 +18,29 @@ function AudioContainer() {
         <h3 className='text-xl my-4 font-semibold italic'>
           Alt+Shift For Orchestra
         </h3>
-        <section className='w-full h-[450px] border-2 border-black border-solid rounded mt-4'>
-          <object
-            data={PDF1}
-            width='100%'
-            type='application/pdf'
-            frameborder='0'
-            height='100%'
-            pad
-            className='resize-y'
-          >
-            <embed
-              src='https://drive.google.com/file/d/1ceJHiKfm4CO-fWEbg1Wrv37iWi9U0anA/preview?usp=sharing"'
+        <section>
+          <ul className='grid gap-[1px]'>
+            {altShiftData.map((dataItem, index) => {
+              return <AudioItem key={index} dataItem={dataItem} />;
+            })}
+          </ul>
+          <section className='w-full h-[450px] border-2 border-black border-solid rounded mt-4'>
+            <object
+              data={PDF1}
               width='100%'
-              height='600px'
-            />
-          </object>
+              type='application/pdf'
+              frameborder='0'
+              height='100%'
+              pad
+              className='resize-y'
+            >
+              <embed
+                src='https://drive.google.com/file/d/1ceJHiKfm4CO-fWEbg1Wrv37iWi9U0anA/preview?usp=sharing"'
+                width='100%'
+                height='600px'
+              />
+            </object>
+          </section>
         </section>
       </article>
 
