@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 // Components
 import SmallCountrySelect from '../../utils/SmallCountrySelect';
@@ -32,30 +33,6 @@ function ContactForm() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    //   setMainButtonContent(false);
-    //   setLoadingAnimation(true);
-
-    //   client
-    //     .post(`/contacts/create`, formData, false)
-    //     .then((res) => {
-    //       console.log('res', res.data);
-    //       setLoadingAnimation(false);
-    //       setContactSuccessMessage({
-    //         status: true,
-    //         message: 'SUCCESS',
-    //       });
-    //     })
-    //     .catch((err) => {
-    //       setLoadingAnimation(false);
-    //       setContactErrorMessage({
-    //         status: true,
-    //         message: err.response.data.data.contact,
-    //       });
-    //       console.error(
-    //         'Unable to send contact message',
-    //         err.response.data.data.contact
-    //       );
-    //     });
   };
 
   return (

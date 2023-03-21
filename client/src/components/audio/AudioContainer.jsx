@@ -18,21 +18,22 @@ function AudioContainer() {
         <h3 className='text-xl my-4 font-semibold italic'>
           Alt+Shift For Orchestra
         </h3>
-        <section className='w-full'>
-          <ul className='grid gap-2 md:gap-[1px] w-full'>
-            {altShiftData.map((dataItem, index) => {
-              return <AudioItem key={index} dataItem={dataItem} />;
-            })}
-          </ul>
-          <section className='h-[450px] border-2 border-black border-solid rounded mt-4'>
+        <section className='w-full h-[450px] border-2 border-black border-solid rounded mt-4'>
+          <object
+            data={PDF1}
+            width='100%'
+            type='application/pdf'
+            frameborder='0'
+            height='100%'
+            pad
+            className='resize-y'
+          >
             <embed
-              src={PDF1}
-              type='application/pdf'
+              src='https://drive.google.com/file/d/1ceJHiKfm4CO-fWEbg1Wrv37iWi9U0anA/preview?usp=sharing"'
               width='100%'
-              height='100%'
-              className='resize-y'
+              height='600px'
             />
-          </section>
+          </object>
         </section>
       </article>
 
@@ -47,14 +48,22 @@ function AudioContainer() {
               return <AudioItem key={index} dataItem={dataItem} />;
             })}
           </ul>
-          <section className='h-[450px] border-2 border-black border-solid rounded mt-4'>
-            <embed
-              src={PDF2}
-              type='application/pdf'
+          <section className='w-full h-[450px] border-2 border-black border-solid rounded mt-4'>
+            <object
+              data={PDF2}
               width='100%'
+              type='application/pdf'
+              frameborder='0'
               height='100%'
+              pad
               className='resize-y'
-            />
+            >
+              <embed
+                src='https://drive.google.com/file/d/1bh5UX41E8urK_78NSatnIp1X7q8t8RUq/preview?usp=sharing"'
+                width='100%'
+                height='600px'
+              />
+            </object>
           </section>
         </section>
       </article>
@@ -65,14 +74,22 @@ function AudioContainer() {
           Distance, Piano Concerto - First Movement
         </h3>
         <section>
-          <section className='h-[450px] border-2 border-black border-solid rounded mt-4'>
-            <embed
-              src={PDF3}
-              type='application/pdf'
+          <section className='w-full h-[450px] border-2 border-black border-solid rounded mt-4'>
+            <object
+              data={PDF3}
               width='100%'
+              type='application/pdf'
+              frameborder='0'
               height='100%'
+              pad
               className='resize-y'
-            />
+            >
+              <embed
+                src='https://drive.google.com/file/d/1tBAZKBP_TioRqtlU26c93pp2z9Rg4Jx0/preview?usp=sharing"'
+                width='100%'
+                height='600px'
+              />
+            </object>
           </section>
         </section>
       </article>
