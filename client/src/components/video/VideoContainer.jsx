@@ -3,14 +3,14 @@ import React, { useState } from 'react';
 import { videoData } from '../../utils/Data';
 
 function VideoContainer() {
-  const [currentlyPlaying, setCurrentlyPlaying] = useState(videoData[2].title);
+  const [currentlyPlaying, setCurrentlyPlaying] = useState(videoData[2].name);
   console.log('videodata', videoData);
 
   const selectVideo = (event) => {
     event.preventDefault();
     const { id } = event.target;
 
-    setCurrentlyPlaying(videoData[id].title);
+    setCurrentlyPlaying(videoData[id].name);
   };
 
   return (
@@ -25,21 +25,32 @@ function VideoContainer() {
                 key={index}
               >
                 <article
-                  id={index}
-                  className='grid h-[200px] bg-green-300 border-2 border-black border-solid duration-300 ease-in-out hover:scale-110 cursor-pointer'
+                  
+                  className='grid h-fit border-2 border-black border-solid duration-300 ease-in-out hover:scale-110 cursor-pointer'
                 >
-                  a
+                  <video id={index} className='h-fit w-fit' controls>
+                    <source src={video.videoData} type='video/mp4' />
+                    Your browser does not support the video tag.
+                  </video>
                 </article>
-                <h4 className='h-20 overflow-hidden leading-4 text-xs px-2'>
-                  {video.title}
-                </h4>
+                <div>
+                  <h4 className='leading-4 text-xs px-2'>
+                    {video.name}
+                  </h4>
+                  <h4 className='leading-4 text-xs px-2'>
+                    {video.title}
+                  </h4>
+                  <h4 className='leading-4 text-xs px-2'>
+                    {video.artist}
+                  </h4>
+                </div>
               </li>
             );
           })}
         </ul>
       </div>
 
-      <section className='hidden lg:grid text-xl text-center'>
+      <section className='hidden lg:grid text-xl text-center my-4'>
         <h5 className='text-xl font-semibold mb-2'>Currently Selected Video</h5>
         <span className='italic text-sm font-semibold'>{currentlyPlaying}</span>
       </section>

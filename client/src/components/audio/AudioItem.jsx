@@ -14,7 +14,7 @@ function AudioItem({ dataItem }) {
           </audio>
         </div>
 
-        <section className='flex justify-between md:w-full'>
+        <section className='flex justify-between md:w-fit gap-6'>
           <h4 className=''>{title}</h4>
           <h5 className='text-left'>Pages: {pageNum}</h5>
         </section>

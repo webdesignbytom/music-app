@@ -13,6 +13,13 @@ import GED2 from '../assets/Audio/GED2.mp3';
 import GED3 from '../assets/Audio/GED3.mp3';
 import GED4 from '../assets/Audio/GED4.mp3';
 import GED5 from '../assets/Audio/GED5.mp3';
+// Video
+import Video1 from '../assets/video/london.mp4';
+import Video2 from '../assets/video/mozart_edit_Original.mp4';
+import Video3 from '../assets/video/debussy_edit_1_Original.mp4';
+import Video4 from '../assets/video/eco_turnbull_distance_Original.mp4';
+import Video5 from '../assets/video/eco_turnbull_cutting_ties_Original.mp4';
+
 
 export const contactFormTemplate = {
   email: '',
@@ -115,9 +122,9 @@ export const gedData = [
 export const videoData = [
   {
     name: `Distance (piano concerto)`,
-    title:  `London Philharmonic Orchestra`,
+    title: `London Philharmonic Orchestra`,
     artist: `Turnbull`,
-    videoData: ``,
+    videoData: Video1,
     data: ``,
     location: ``,
   },
@@ -125,7 +132,7 @@ export const videoData = [
     name: `Figaro Overture`,
     title: `London Philharmonic Orchestra`,
     artist: `Mozart`,
-    videoData: ``,
+    videoData: Video2,
     data: ``,
     location: ``,
   },
@@ -133,7 +140,7 @@ export const videoData = [
     name: `Prélude à l'après midi d'un faune`,
     title: `London Philharmonic Orchestra Distance (piano concerto) `,
     artist: `Debussy`,
-    videoData: ``,
+    videoData: Video3,
     data: ``,
     location: ``,
   },
@@ -141,7 +148,7 @@ export const videoData = [
     name: `Distance`,
     title: `Piano Concerto `,
     artist: `English Chamber Orchestra - Turnbull`,
-    videoData: ``,
+    videoData: Video4,
     data: ``,
     location: ``,
   },
@@ -149,7 +156,7 @@ export const videoData = [
     name: `Cutting Ties`,
     title: `Piano Concerto`,
     artist: `English Chamber Orchestra - Turnbull`,
-    videoData: ``,
+    videoData: Video5,
     data: ``,
     location: ``,
   },
