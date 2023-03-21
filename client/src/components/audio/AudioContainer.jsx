@@ -24,7 +24,7 @@ function AudioContainer() {
               return <AudioItem key={index} dataItem={dataItem} />;
             })}
           </ul>
-          <section className='w-full h-[450px] border-2 border-black border-solid rounded mt-4 mb-24'>
+          <section className='w-full h-[450px] border-2 border-black border-solid rounded mt-4 mb-32'>
             <object
               data={PDF1}
               width='100%'
@@ -55,7 +55,7 @@ function AudioContainer() {
               return <AudioItem key={index} dataItem={dataItem} />;
             })}
           </ul>
-          <section className='w-full h-[450px] border-2 border-black border-solid rounded mt-4 mb-24'>
+          <section className='w-full h-[450px] border-2 border-black border-solid rounded mt-4 mb-32'>
             <object
               data={PDF2}
               width='100%'
