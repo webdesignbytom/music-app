@@ -4,7 +4,8 @@ import { altShiftData, gedData } from '../../utils/Data';
 // Components
 import AudioItem from './AudioItem';
 // PDF
-import PDF1 from '../../assets/pdf/stu_proof.pdf';
+import PDF1 from '../../assets/pdf/altShift.pdf';
+import PDF2 from '../../assets/pdf/goed.pdf';
 import PDF3 from '../../assets/pdf/distance2.pdf';
 
 console.log('alt', altShiftData);
@@ -46,21 +47,13 @@ function AudioContainer() {
               return <AudioItem key={index} dataItem={dataItem} />;
             })}
           </ul>
-          <section className='hidden md:block h-[450px] border-2 border-black border-solid rounded mt-4'>
+          <section className='h-[450px] border-2 border-black border-solid rounded mt-4'>
             <embed
-              src={PDF1}
+              src={PDF2}
               type='application/pdf'
               width='100%'
               height='100%'
-              className='resize-y '
-            />
-  
-          </section>
-          <section className='md:hidden h-[450px] border-2 border-black border-solid rounded mt-4'>
-            <embed
-              src={PDF1}
-              type='application/pdf'
-             className='w-[100%] h-full'
+              className='resize-y'
             />
           </section>
         </section>
