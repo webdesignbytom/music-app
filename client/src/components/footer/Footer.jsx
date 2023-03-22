@@ -10,7 +10,7 @@ function Footer() {
         <h3 className='text-xl font-medium text-white'>Angels</h3>
       </section>
       <hr class='h-px mt-4 mb-8 bg-gray-200 border-0 dark:bg-gray-700' />{' '}
-      <section className='my-4 grid md:flex items-center'>
+      <section className='my-4 grid md:grid md:grid-cols-reg items-center mx-6'>
         <div className='p-2 flex justify-center'>
           <a href='https://www.hoaresbank.co.uk/'>
             <img
@@ -20,7 +20,7 @@ function Footer() {
             />
           </a>
         </div>
-        <div className='p-2 text-center'>
+        <div className='p-2 text-center justify-center'>
           <p className='text-sm grid'>
             I would like to mention Hoare and Co to whom I owe a huge debt of
             gratitde; for their kindness over many years - funding many projects
