@@ -28,13 +28,13 @@ function VideoContainer() {
                   
                   className='figrid h-fit duration-300 ease-in-out hover:scale-110 cursor-pointer'
                 >
-                  <video id={index} className='h-fit m-h-[150px] w-fit' controls>
+                  <video id={index} className='max-h-[180px] w-fit' controls>
                     <source src={video.videoData} type='video/mp4' />
                     Your browser does not support the video tag.
                   </video>
                 </article>
                 <div>
-                  <h4 className='leading-4 text-xs px-2'>
+                  <h4 className='leading-4 text-xs px-2 italic'>
                     {video.name}
                   </h4>
                   <h4 className='leading-4 text-xs px-2'>
@@ -49,6 +49,13 @@ function VideoContainer() {
           })}
         </ul>
       </div>
+
+      <section className='md:hidden'>
+          <div>
+            <h3>Select Video</h3>
+          </div>
+          <div></div>
+      </section>
 
       <section className='hidden lg:grid text-xl text-center my-4'>
         <h5 className='text-xl font-semibold mb-2'>Currently Selected Video</h5>
