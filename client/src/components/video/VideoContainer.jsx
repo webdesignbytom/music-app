@@ -14,7 +14,7 @@ function VideoContainer() {
   };
 
   return (
-    <section className='grid p-1 mb-8 border-2 border-black border-solid rounded'>
+    <section className='max-h-[1400px] overflow-hidden grid p-1 mb-8 border-2 border-black border-solid rounded'>
       <div className='grid'>
         <ul className='grid md:grid-cols-3 lg:grid-cols-5'>
           {videoData.map((video, index) => {
@@ -26,9 +26,9 @@ function VideoContainer() {
               >
                 <article
                   
-                  className='grid h-fit border-2 border-black border-solid duration-300 ease-in-out hover:scale-110 cursor-pointer'
+                  className='figrid h-fit duration-300 ease-in-out hover:scale-110 cursor-pointer'
                 >
-                  <video id={index} className='h-fit w-fit' controls>
+                  <video id={index} className='h-fit m-h-[150px] w-fit' controls>
                     <source src={video.videoData} type='video/mp4' />
                     Your browser does not support the video tag.
                   </video>

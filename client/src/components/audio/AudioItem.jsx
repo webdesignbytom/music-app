@@ -9,6 +9,8 @@ function AudioItem({ dataItem }) {
       <section className='w-full grid md:grid md:grid-cols-reg md:gap-10 items-center p-1'>
         <div className='w-full flex'>
           <audio controls>
+            <source src={audio} type='audio/mp3'></source>
+            <source src={audio} type='audio/mpeg'></source>
             <source src={audio} type='audio/ogg'></source>
             Your browser does not support the audio tag.
           </audio>
