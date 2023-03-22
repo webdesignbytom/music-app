@@ -25,7 +25,7 @@ function ReviewsPage() {
           <section>
             <p className='p-2 text-center lg:mx-8'>
               <span className='font-semibold'>After</span> years devoted to and
-              loving music, Stuarts passion and skills have earned praise from
+              loving music, Stuart's passion and skills have earned praise from
               musicians of high standing around the world. Playing with,
               producing, or in the audience Stuart's talents have been well
               recived by all.

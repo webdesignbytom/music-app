@@ -24,6 +24,15 @@ function AudioContainer() {
               return <AudioItem key={index} dataItem={dataItem} />;
             })}
           </ul>
+          <div className='flex justify-center'>
+            <a
+              href={PDF1}
+              download
+              className='text-white bg-black dark:bg-white dark:text-black py-2 px-4 font-semibold text-xl rounded'
+            >
+              Download PDF
+            </a>
+          </div>
           <section className='w-full h-screen border-2 border-black border-solid rounded mt-4 mb-32'>
             <object
               data={PDF1}
@@ -55,6 +64,15 @@ function AudioContainer() {
               return <AudioItem key={index} dataItem={dataItem} />;
             })}
           </ul>
+          <div className='flex justify-center'>
+            <a
+              href={PDF2}
+              download
+              className='text-white bg-black dark:bg-white dark:text-black py-2 px-4 font-semibold text-xl rounded'
+            >
+              Download PDF
+            </a>
+          </div>
           <section className='w-full h-screen border-2 border-black border-solid rounded mt-4 mb-32'>
             <object
               data={PDF2}
@@ -80,6 +98,15 @@ function AudioContainer() {
         <h3 className='text-2xl my-4 font-semibold italic'>
           Distance, Piano Concerto - First Movement
         </h3>
+        <div className='flex justify-center'>
+            <a
+              href={PDF3}
+              download
+              className='text-white bg-black dark:bg-white dark:text-black py-2 px-4 font-semibold text-xl rounded'
+            >
+              Download PDF
+            </a>
+          </div>
         <section>
           <section className='w-full h-screen border-2 border-black border-solid rounded mt-4'>
             <object
