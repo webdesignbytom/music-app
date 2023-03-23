@@ -138,8 +138,8 @@ export const videoData = [
   },
   {
     name: `Prélude à l'après midi d'un faune`,
-    title: `London Philharmonic Orchestra Distance (piano concerto) `,
-    artist: `Debussy`,
+    title: `London Philharmonic Orchestra`,
+    artist: ``,
     videoData: Video3,
     data: ``,
     location: ``,

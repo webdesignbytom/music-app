@@ -7,6 +7,8 @@ import AudioItem from './AudioItem';
 import PDF1 from '../../assets/pdf/altShift.pdf';
 import PDF2 from '../../assets/pdf/goed.pdf';
 import PDF3 from '../../assets/pdf/distance2.pdf';
+// Images
+import KansasLogo from '../../assets/img/kansas_logo.png';
 
 console.log('alt', altShiftData);
 function AudioContainer() {
@@ -19,11 +21,20 @@ function AudioContainer() {
           Alt+Shift For Orchestra
         </h3>
         <section>
-          <ul className='grid gap-[1px]'>
-            {altShiftData.map((dataItem, index) => {
-              return <AudioItem key={index} dataItem={dataItem} />;
-            })}
-          </ul>
+          <section className='md:flex'>
+            <img
+              className='w-full my-4 md:my-0 md:mr-4 lg:w-[400px] object-contain'
+              src='https://www.kcsymphony.org/wp-content/themes/kcsymphony/images/logo_black.png'
+              alt='kansas city symphony'
+            />
+
+            <ul className='grid gap-[1px]'>
+              {altShiftData.map((dataItem, index) => {
+                return <AudioItem key={index} dataItem={dataItem} />;
+              })}
+            </ul>
+          </section>
+
           <div className='flex justify-center'>
             <a
               href={PDF1}
@@ -59,11 +70,18 @@ function AudioContainer() {
           The Garden of Earthly Delights for Large Orchestra
         </h3>
         <section>
-          <ul className='grid gap-[1px]'>
-            {gedData.map((dataItem, index) => {
-              return <AudioItem key={index} dataItem={dataItem} />;
-            })}
-          </ul>
+          <section className='md:flex'>
+            <img
+              className='w-full my-4 md:my-0 md:mr-4 lg:w-[400px]'
+              src='https://pbs.twimg.com/profile_images/1152167454547873793/qSsYpXsj_400x400.jpg'
+              alt='kansas city symphony'
+            />
+            <ul className='grid gap-[1px]'>
+              {gedData.map((dataItem, index) => {
+                return <AudioItem key={index} dataItem={dataItem} />;
+              })}
+            </ul>
+          </section>
           <div className='flex justify-center'>
             <a
               href={PDF2}
@@ -99,14 +117,14 @@ function AudioContainer() {
           Distance, Piano Concerto - First Movement
         </h3>
         <div className='flex justify-center'>
-            <a
-              href={PDF3}
-              download
-              className='text-white bg-black dark:bg-white dark:text-black py-2 px-4 font-semibold text-xl rounded'
-            >
-              Download PDF
-            </a>
-          </div>
+          <a
+            href={PDF3}
+            download
+            className='text-white bg-black dark:bg-white dark:text-black py-2 px-4 font-semibold text-xl rounded'
+          >
+            Download PDF
+          </a>
+        </div>
         <section>
           <section className='w-full h-screen border-2 border-black border-solid rounded mt-4'>
             <object
