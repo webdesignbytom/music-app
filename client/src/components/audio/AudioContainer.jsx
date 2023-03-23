@@ -17,17 +17,18 @@ function AudioContainer() {
       <h2 className='text-2xl font-bold'>Scores</h2>
       {/* 1 */}
       <article className='grid w-full mb-4'>
-        <h3 className='text-xl my-4 font-semibold italic'>
+        <h3 className='text-2xl mt-4 font-semibold italic'>
           Alt+Shift For Orchestra
         </h3>
         <section>
           <section className='md:flex'>
-            <img
-              className='w-full my-4 md:my-0 md:mr-4 lg:w-[400px] object-contain'
-              src='https://www.kcsymphony.org/wp-content/themes/kcsymphony/images/logo_black.png'
-              alt='kansas city symphony'
-            />
-
+            <div className='flex justify-center items-center my-6 md:my-0'>
+              <img
+                className='w-[50%] md:max-h-[300px] md:mr-4 lg:w-[400px]  object-contain'
+                src='https://www.kcsymphony.org/wp-content/themes/kcsymphony/images/logo_black.png'
+                alt='kansas city symphony'
+              />
+            </div>
             <ul className='grid gap-[1px]'>
               {altShiftData.map((dataItem, index) => {
                 return <AudioItem key={index} dataItem={dataItem} />;
@@ -66,16 +67,18 @@ function AudioContainer() {
 
       {/* 2 */}
       <article className='grid'>
-        <h3 className='text-2xl my-4 font-semibold italic'>
+        <h3 className='text-2xl mt-4 font-semibold italic'>
           The Garden of Earthly Delights for Large Orchestra
         </h3>
         <section>
-          <section className='md:flex'>
-            <img
-              className='w-full my-4 md:my-0 md:mr-4 lg:w-[400px]'
-              src='https://pbs.twimg.com/profile_images/1152167454547873793/qSsYpXsj_400x400.jpg'
-              alt='kansas city symphony'
-            />
+          <section className='md:flex md:h-fit'>
+            <div className='flex justify-center items-center my-6 md:my-0 '>
+              <img
+                className='w-[50%] md:mr-4 md:w-fit md:h-[75%] md:max-h-[300px] md:my-auto'
+                src='https://pbs.twimg.com/profile_images/1152167454547873793/qSsYpXsj_400x400.jpg'
+                alt='kansas city symphony'
+              />
+            </div>
             <ul className='grid gap-[1px]'>
               {gedData.map((dataItem, index) => {
                 return <AudioItem key={index} dataItem={dataItem} />;
